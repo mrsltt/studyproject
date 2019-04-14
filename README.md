@@ -1,1 +1,1 @@
-# studyproject
+# Generate this project in order to learn some theory about jdk
