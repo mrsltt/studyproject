@@ -1,8 +1,5 @@
 package com.sunli.jdkstudy;
 
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,23 +12,28 @@ public class MyFilterInputStream extends FilterInputStream{
 
 	public MyFilterInputStream(InputStream in) {
 		super(in);
-		// TODO Auto-generated constructor stub
 	}
 	
-	 public int read() throws IOException {
-		 System.out.println("假装我装饰了一下");
-		 return super.read();
-	 } 
+	public int read() throws IOException {
+		System.out.println("装饰myinputstream");
+		return super.read();
+	}
+	public static void main(String[] args) throws IOException {
+		MyInputStream my = new MyInputStream("fcdf");
+		MyFilterInputStream my1 = new MyFilterInputStream(my);
+		byte b[] = new byte[10];
+		byte c[] = new byte[10];
+		for(int i=0;i<my.getLen();i++) {
+			my1.read(b);
+			System.out.println(("fcdf".charAt(i) & 0xFF));
+			c[i] = (byte)("fcdf".charAt(i) & 0xFF);
+		}
+		String cache1 = new String(b);
+		System.out.println(new String(cache1.getBytes("gbk"),"utf-8"));
+		System.out.println(new String(c));
+		
+	}
 
-public static void main(String args[]) throws FileNotFoundException {
-	
-	InputStream i = new FileInputStream("aaaa");
-	//装饰一个fileinputstream（但是这里面卵用没有，需要加功能）
-	MyFilterInputStream a = new MyFilterInputStream(i);
-	BufferedInputStream bf = new BufferedInputStream(a);
-	//这种代码不报错，但是就属于没有任何意义，不管包多少层，都是
-	MyFilterInputStream a2 = new MyFilterInputStream(bf);
-	
-}
+
 
 }
