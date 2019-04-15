@@ -29,7 +29,7 @@ public static void main(String args[]) throws FileNotFoundException {
 	//装饰一个fileinputstream（但是这里面卵用没有，需要加功能）
 	MyFilterInputStream a = new MyFilterInputStream(i);
 	BufferedInputStream bf = new BufferedInputStream(a);
-	//这种代码不报错，但是就属于没有任何意义
+	//这种代码不报错，但是就属于没有任何意义，不管包多少层，都是
 	MyFilterInputStream a2 = new MyFilterInputStream(bf);
 	
 }
