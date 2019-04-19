@@ -1,4 +1,4 @@
-package com.sunli.jdkstudy;
+package com.sunli.jdkstudy.decorateio;
 
 import java.io.FilterInputStream;
 import java.io.IOException;
@@ -25,7 +25,11 @@ public class MyInputStream extends InputStream{
     protected int count;
 	
     public  int read() {
+    	test();
         return (pos < count) ? (buffer.charAt(pos++) & 0xFF) : -1;
+    }
+    public void test() {
+    	System.out.println("myinputstram");
     }
 	
     public MyInputStream(String s) {

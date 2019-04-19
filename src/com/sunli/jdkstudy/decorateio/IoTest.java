@@ -1,4 +1,4 @@
-package com.sunli.jdkstudy;
+package com.sunli.jdkstudy.decorateio;
 
 import java.io.IOException;
 import java.io.StringBufferInputStream;

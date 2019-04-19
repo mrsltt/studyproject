@@ -1,4 +1,4 @@
-package com.sunli.jdkstudy;
+package com.sunli.jdkstudy.decorateio;
 
 import java.io.FilterInputStream;
 import java.io.IOException;
@@ -21,6 +21,7 @@ public class MyFilterInputStream extends FilterInputStream{
 	public static void main(String[] args) throws IOException {
 		MyInputStream my = new MyInputStream("fcdf");
 		MyFilterInputStream my1 = new MyFilterInputStream(my);
+		
 		byte b[] = new byte[10];
 		byte c[] = new byte[10];
 		for(int i=0;i<my.getLen();i++) {
