@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<leaguetable>
+  <tables>
+    <table name="T_F1001">
+      <columns>
+        <column name="pk" type="0" length="20" precision="0"/>
+        <column name="scenario" type="1" length="80" precision="0"/>
+        <column name="entity" type="1" length="80" precision="0"/>
+        <column name="year" type="2" length="10" precision="0"/>
+        <column name="period" type="2" length="10" precision="0"/>
+        <column name="source" type="2" length="10" precision="0"/>
+        <column name="rownumber" type="2" length="10" precision="0"/>
+        <column name="a1001" type="1" length="80" precision="0"/>
+        <column name="a1002" type="3" length="22" precision="0"/>
+        <column name="a1003" type="1" length="80" precision="0"/>
+      </columns>
+    </table>
+    <table name="T_F1001_1">
+      <columns>
+        <column name="pk" type="0" length="20" precision="0"/>
+        <column name="scenario" type="1" length="80" precision="0"/>
+        <column name="entity" type="1" length="80" precision="0"/>
+        <column name="year" type="2" length="10" precision="0"/>
+        <column name="period" type="2" length="10" precision="0"/>
+        <column name="source" type="2" length="10" precision="0"/>
+        <column name="rownumber" type="2" length="10" precision="0"/>
+        <column name="a1001" type="1" length="80" precision="0"/>
+        <column name="a1002" type="3" length="22" precision="0"/>
+        <column name="a1003" type="1" length="80" precision="0"/>
+      </columns>
+    </table>
+    <table name="T_AL003_1">
+      <columns>
+        <column name="pk" type="0" length="20" precision="0"/>
+        <column name="scenario" type="1" length="80" precision="0"/>
+        <column name="entity" type="1" length="80" precision="0"/>
+        <column name="year" type="2" length="10" precision="0"/>
+        <column name="period" type="2" length="10" precision="0"/>
+        <column name="source" type="2" length="10" precision="0"/>
+        <column name="rownumber" type="2" length="10" precision="0"/>
+        <column name="a001" type="1" length="80" precision="0"/>
+        <column name="a002" type="1" length="80" precision="0"/>
+        <column name="a003" type="3" length="22" precision="0"/>
+        <column name="a004" type="1" length="80" precision="0"/>
+      </columns>
+    </table>
+    <table name="T_AL002_1">
+      <columns>
+        <column name="pk" type="0" length="20" precision="0"/>
+        <column name="scenario" type="1" length="80" precision="0"/>
+        <column name="entity" type="1" length="80" precision="0"/>
+        <column name="year" type="2" length="10" precision="0"/>
+        <column name="period" type="2" length="10" precision="0"/>
+        <column name="source" type="2" length="10" precision="0"/>
+        <column name="rownumber" type="2" length="10" precision="0"/>
+        <column name="a001" type="1" length="80" precision="0"/>
+        <column name="a002" type="3" length="22" precision="0"/>
+        <column name="a003" type="1" length="80" precision="0"/>
+        <column name="a004" type="1" length="80" precision="0"/>
+      </columns>
+    </table>
+  </tables>
+  <leaguereports>
+    <leaguereport name="a测试浮动表批量清楚数据1" code="T_F1001" security="001">
+      <note></note>
+      <definition issummit="N" issummitbottom="N" isdetail="N" reporttype="horizontal" reportdataimporttype="incremental" rowheight="20" rowtitlewidth="80" tops="80" hiddenotherrow="N" procedureName="" helpLibrarys=""/>
+      <checkFormulaVOs/>
+      <reportcolumns>
+        <reportcolumn colname="ID" colcode="pk" relationpov="none" displaywidth="80" property="pk,hidden_leaf,hidden_parent" coltype="0" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="情景" colcode="scenario" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,scenario" coltype="1" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="公司名称" colcode="entity" relationpov="none" displaywidth="80" property="entity,group,hidden_leaf" coltype="1" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="年度" colcode="year" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,year" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="期间" colcode="period" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,period" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="来源" colcode="source" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,source" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="序号" colcode="rownumber" relationpov="none" displaywidth="80" property="rownumber,total" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="科目名称" colcode="a1001" relationpov="none" displaywidth="80" property="" coltype="1" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+        <reportcolumn colname="科目金额" colcode="a1002" relationpov="ACCOUNT" defaultdimensions="ZXH01; [ICP None]; [None]; [None]; [None]; [None]" displaywidth="80" property=",match_code" coltype="3" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+        <reportcolumn colname="科目备注" colcode="a1003" relationpov="Data" defaultdimensions="ZXH01; [ICP None]; [None]; [None]; [None]; [None]" displaywidth="80" property=",match_code" coltype="1" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+      </reportcolumns>
+    </leaguereport>
+    <leaguereport name="a测试浮动表批量清楚数据1_1" code="T_F1001_1" security="001">
+      <note></note>
+      <definition issummit="N" issummitbottom="N" isdetail="N" reporttype="horizontal" reportdataimporttype="overwrite" rowheight="20" rowtitlewidth="80" tops="80" hiddenotherrow="N" procedureName="" helpLibrarys=""/>
+      <checkFormulaVOs/>
+      <reportcolumns>
+        <reportcolumn colname="ID" colcode="pk" relationpov="none" displaywidth="80" property="pk,hidden_leaf,hidden_parent" coltype="0" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="情景" colcode="scenario" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,scenario" coltype="1" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="公司名称" colcode="entity" relationpov="none" displaywidth="80" property="entity,group,hidden_leaf" coltype="1" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="年度" colcode="year" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,year" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="期间" colcode="period" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,period" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="来源" colcode="source" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,source" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="序号" colcode="rownumber" relationpov="none" displaywidth="80" property="rownumber,total" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="科目名称" colcode="a1001" relationpov="none" displaywidth="80" property="" coltype="1" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+        <reportcolumn colname="科目金额" colcode="a1002" relationpov="ACCOUNT" defaultdimensions="zxh0101; [ICP None]; [None]; [None]; [None]; [None]" displaywidth="80" property=",match_code" coltype="3" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+        <reportcolumn colname="科目备注" colcode="a1003" relationpov="Data" defaultdimensions="zxh0101; [ICP None]; [None]; [None]; [None]; [None]" displaywidth="80" property=",match_code" coltype="1" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+      </reportcolumns>
+    </leaguereport>
+    <leaguereport name="LDD列关联_1" code="T_AL003_1" security="[Default]">
+      <note></note>
+      <definition issummit="N" issummitbottom="N" isdetail="N" reporttype="horizontal" reportdataimporttype="incremental" rowheight="20" rowtitlewidth="80" tops="80" hiddenotherrow="N" procedureName="" helpLibrarys=""/>
+      <checkFormulaVOs/>
+      <reportcolumns>
+        <reportcolumn colname="ID" colcode="pk" relationpov="none" displaywidth="80" property="pk,hidden_leaf,hidden_parent" coltype="0" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="情景" colcode="scenario" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,scenario" coltype="1" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="公司名称" colcode="entity" relationpov="none" displaywidth="80" property="entity,group,hidden_leaf" coltype="1" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="年度" colcode="year" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,year" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="期间" colcode="period" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,period" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="来源" colcode="source" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,source" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="序号" colcode="rownumber" relationpov="none" displaywidth="80" property="rownumber,total" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="金额1浮点data指定科目07" colcode="A001" relationpov="Data" defaultdimensions="ZXH07; [ICP None]; [None]; [None]; [None]; [None]" displaywidth="80" property=",match_code" coltype="1" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+        <reportcolumn colname="备注1字符data指定科目07" colcode="A002" relationpov="Data" defaultdimensions="ZXH07; [ICP None]; [None]; [None]; [None]; [None]" displaywidth="80" property=",match_code" coltype="1" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+        <reportcolumn colname="金额2浮点data指定科目08" colcode="A003" relationpov="ACCOUNT" defaultdimensions="ZXH08; [ICP None]; [None]; [None]; [None]; [None]" displaywidth="80" property=",match_code" coltype="3" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+        <reportcolumn colname="备注2字符data指定科目08" colcode="A004" relationpov="Data" defaultdimensions="ZXH08; [ICP None]; [None]; [None]; [None]; [None]" displaywidth="80" property=",match_code" coltype="1" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+      </reportcolumns>
+    </leaguereport>
+    <leaguereport name="LDD行关联_1" code="T_AL002_1" security="[Default]">
+      <note></note>
+      <definition issummit="N" issummitbottom="N" isdetail="N" reporttype="horizontal" reportdataimporttype="incremental" rowheight="20" rowtitlewidth="80" tops="80" hiddenotherrow="N" procedureName="" helpLibrarys=""/>
+      <checkFormulaVOs/>
+      <reportcolumns>
+        <reportcolumn colname="ID" colcode="pk" relationpov="none" displaywidth="80" property="pk,hidden_leaf,hidden_parent" coltype="0" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="情景" colcode="scenario" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,scenario" coltype="1" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="公司名称" colcode="entity" relationpov="none" displaywidth="80" property="entity,group,hidden_leaf" coltype="1" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="年度" colcode="year" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,year" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="期间" colcode="period" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,period" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="来源" colcode="source" relationpov="none" displaywidth="80" property="hidden_leaf,hidden_parent,source" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="序号" colcode="rownumber" relationpov="none" displaywidth="80" property="rownumber,total" coltype="2" filter_type="0" sum_type="0"/>
+        <reportcolumn colname="科目字符型ACCOUNT" colcode="A001" relationpov="ACCOUNT" defaultdimensions="" displaywidth="80" property=",match_code" coltype="1" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+        <reportcolumn colname="余额浮点data" colcode="A002" relationpov="ACCOUNT" defaultdimensions="[None]; [ICP None]; [None]; [None]; [None]; [None]" displaywidth="80" property=",match_code" coltype="3" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+        <reportcolumn colname="备注字符data" colcode="A003" relationpov="Data" defaultdimensions="[None]; [ICP None]; [None]; [None]; [None]; [None]" displaywidth="80" property=",match_code" coltype="1" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+        <reportcolumn colname="C1字符" colcode="A004" relationpov="C1" defaultdimensions="" displaywidth="80" property=",match_code" coltype="1" filter_type="0" sum_type="0" definition="0,0,false,false," description=""/>
+      </reportcolumns>
+    </leaguereport>
+  </leaguereports>
+</leaguetable>

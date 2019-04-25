@@ -12,11 +12,12 @@ public class DecrateExtend extends Decorate{
 	}
 	
 	public static void main(String args[]) {
+		int a = 1;
+		int b = 2;
 		Decorate dq1 = new Decorate();
-		DecrateExtend dq = new DecrateExtend();
-		dq1.test1();
-		dq.test3();
-		dq.test1();
+		Decorateing d1 = new Decorateing(dq1, a, b);
+		Decorateing2 d2  = new Decorateing2(d1);
+		
 	}
 	
 }
