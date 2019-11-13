@@ -1,24 +1,28 @@
 package mrsl.jdkstudy.designpartten.decorate.decorate;
 
-import mrsl.jdkstudy.designpartten.decorate.def.Decorate;
+import mrsl.jdkstudy.designpartten.decorate.def.Component;
+import mrsl.jdkstudy.designpartten.decorate.def.Decorate2;
 
 /**
- * 装饰1类，注意该类必须继承Decorate，并且装饰所有Decorate中
- * 所声明的待装饰方法，其在遵循里氏原则的基础上可以自行动态扩展
- * 以装饰待装饰类
- * 为method1动态增加methodsub1，methodsub2，methodsub3
+ * 与decorate1一样，只不过采用构造函数的形式进行包装
+ * 同样装饰decoratedclass中的method1方法
  * @author Administrator
  *
  */
-public class Decorate1 extends Decorate{
+public class Decorateing11 extends Decorate2{
 
+	public Decorateing11(Component comp) {
+		super(comp);
+	}
+	
+	@Override
 	public void method1() {
-		methodsub1();
-		methodsub2();
 		super.method1();
 		methodsub3();
+		methodsub2();
+		methodsub1();
 	}
-
+	
 	private void methodsub3() {
 		// TODO Auto-generated method stub
 		System.out.println("methodsub3 do something");

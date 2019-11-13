@@ -10,7 +10,7 @@ import mrsl.jdkstudy.designpartten.decorate.def.Decorate;
  * @author Administrator
  *
  */
-public class Decorate2 extends Decorate{
+public class Decorateing2 extends Decorate{
 	public void method1() {
 		methodsub4();
 		methodsub5();
