@@ -15,23 +15,12 @@ public class Director {
 		/**
 		 * ¶ÔÓÚ
 		 */
-		if(build instanceof ConcreteBuilder1) {
 			build.buildMethod1();
 			build.buildMethod2();
 			build.buildMethod1();
 			build.buildMethod2();
 			build.buildMethod1();
 			build.buildMethod2();
-		}else {
-			build.buildMethod1();
-			build.buildMethod2();
-			build.buildMethod1();
-			build.buildMethod2();
-			build.buildMethod1();
-			build.buildMethod2();
-			build.buildMethod1();
-			build.buildMethod2();
-		}
 	}
 	
 }
